@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vas-frontend</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="script.js" defer></script>
+    <script src="src/js/html2canvas.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="mainTitle">Конфигуратор баннера</h1>
+        <p class="recommendation">Рекомендации по эксплуатации ресурса: <br>
+            1. При добавлении информации о картинки, используемой на баннере, мы рекомендуем использовать не глобальную ссылку на картинку, а её dataURI, так как это позволит более корректно продолжить работу с ней. Вот пример ресурса, где можно получить dataURI любой картинки: <a class="LinkRecommendation" href="https://ezgif.com/image-to-datauri">https://ezgif.com/image-to-datauri</a>. <br>
+            2. При добавлении текст на баннер имейте ввиду, что текст на баннере может быть не больше 3 строк, весь текст, выходящий за пределы 3-х строк, отображаться не будет. <br>
+            3. Так же в пункты выбора цвета и ссылки баннера, вы можете выбрать цвет нижней части градиента и ссылку, по которой будет производиться переход при нажатии на баннер. <br>
+            4. После оформления конфигурации баннера нажмите на кнопку ОТПРАВИТЬ и посмотрите на превью баннера, после чего вы снова можете поправить конфигурацию. <br>
+            5. Когда вы выберите интересующий вас баннер всё, что вам останется - это выбрать вариант экспорта и экспортировать его как PNG, HTML или JSON.
+        </p>
+    </header>
+    <div id="bannerHTML">
+        <div id="banner" class="bannerBlock">
+            <a id="linkBanner" href="#" class="bannerLink">
+                <p id="textBanner" class="bannerText">Текст баннера будет отображаться сдесь, он не должен превышать трёх строк</p>
+                <div id="colorBanner" class="gradient"></div>
+                <img id="imgBanner" src="" alt="" class="bannerImg">
+            </a>
+        </div>
+    </div>
+    <form id="configBanner" name="configBanner" class="bannerForm">
+        <p class="titleForm">редактирование баннера</p>
+        <div class="containerForm">
+            <div class="containerInputs">
+                <p class="paragraphInputs">Впишите ссылку картинки или её dataURI</p>
+                <input name="img" type="text" class="inputForm" placeholder="Поле ввода . . .">
+            </div>
+            <div class="containerInputs">
+                <p class="paragraphInputs">Впишите используемый текст</p>
+                <input name="text" type="text" class="inputForm" placeholder="Поле ввода . . .">
+            </div>
+            <div class="containerInputs">
+                <p class="paragraphInputs">Выберите цвет из политры</p>
+                <input name="color" id="Color" type="color" class="inputColorForm">
+            </div>
+            <div class="containerInputs">
+                <p class="paragraphInputs">Впишите ссылку баннера</p>
+                <input name="link" type="text" class="inputForm" placeholder="Поле ввода . . .">
+            </div>
+        </div>
+        <input type="button" id="btnForm" value="Отправить" class="btnForm">
+    </form>
+    <div class="saveBannerBlock">
+        <p id="massage" class="massage"></p>
+        <a class="saveButton" id="screenBtn" download="banner.png">Cохранить как PNG</a>
+        <a class="saveButton" id="copyHTML">Скопировать как HTML разметку</a>
+        <a class="saveButton" id="copyJSON">Cкопировать конфигурацию как JSON строку</a>
+    </div>
+</body>
+</html>

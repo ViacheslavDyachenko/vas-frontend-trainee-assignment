@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+}
+.mainTitle {
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.recommendation {
+    font-family: sans-serif;
+    color: #fff;
+    width: 90%;
+}
+.LinkRecommendation {
+    text-decoration: none;
+    color: #999;
+}
+.LinkRecommendation:hover {
+    color: #fff;
+}
+.bannerBlock {
+    width: 60vh;
+    height: 90vh;
+    background-color: #ddd;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 50px;
+    
+}
+.bannerLink {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: black;
+    line-height: 30px;
+}
+.bannerImg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    max-height: 90vh;
+    z-index: 1;
+}
+.gradient {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-image: linear-gradient(to top, #444, transparent);
+    z-index: 2;
+    position: absolute;
+}
+.bannerText {
+    z-index: 3;
+    margin-bottom: 100px;
+    max-height: 90px;
+    overflow: hidden;
+    position: absolute;
+}
+.bannerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    width: 80vw;
+    height: 40vh;
+    border: 2px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.titleForm {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+.containerForm {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.containerInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.paragraphInputs {
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+.inputForm {
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 25px;
+}
+.inputColorForm {
+    border: 2px solid black;
+    background: #fff;
+    cursor: pointer;
+}
+.btnForm {
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 25px;
+    background-color: #fff;
+    width: 120px;
+    font-family: sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+.saveBannerBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 40vh;
+    margin-bottom: 50px;
+}
+.saveButton {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.saveButton:hover,
+.btnForm:hover {
+    background-color: #000;
+    color: #fff;
+}
+.massage {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #003C00;
+    background-color: #73FF73;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.error {
+    color: #A60000;
+    background-color: #FF7878;
+}
